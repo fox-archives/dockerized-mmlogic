@@ -1,8 +1,9 @@
 FROM ubuntu:19.10
 
 # install wine
-RUN apt-get -y update
-RUN apt-get -y install wine
+RUN dpkg --add-architecture i386
+RUN apt-get update -y
+RUN apt-get install -y --no-install-recommends wine32 wine
 
 # create 'developer' user
 RUN mkdir -p /home/developer && \
@@ -19,4 +20,6 @@ USER developer
 ENV HOME /home/developer
 WORKDIR /home/developer
 
-CMD ["wine", "mmlogic14.exe"]
+# use wine
+# CMD ["wine", "mmlogic14.exe"]
+CMD ["wine", ".wine/drive_c/Program Files/Softronics/Mulimedia Logic/Mmlogic.exe"]
