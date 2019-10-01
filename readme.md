@@ -8,7 +8,7 @@ MultiMedia Logic is a good program logic simulation and the similar. If you want
 
 If you are on GNU/Linux, this will only work if you are running an Xorg display server on your host machine. (Wayland and Mir are not directly supported).
 
-**Important**, the MultiMedia Logic program will only be able to see files that are contained in the `./dockerized-mmlogic` directory. You will *not* be able to browse for files that are just anywhere on your computer. This is because we are [bind mounting](https://docs.docker.com/storage/bind-mounts) the [`./dockerized-mmlogic` directory](https://github.com/eankeen/dockerized-mmlogic/blob/da31dcd55261c8ea9784bd90c913c0e4a2d498365cd6b1172497/start.sh#L10) into the Docker container.
+**Important**, the MultiMedia Logic program will only be able to see files that are contained in the `./dockerized-mmlogic` directory. You will *not* be able to browse for files that are just anywhere on your computer. This is because we are [bind mounting](https://docs.docker.com/storage/bind-mounts) the [`./dockerized-mmlogic` directory](https://github.com/eankeen/dockerized-mmlogic/blob/27e54294f258749bfe92382b301a7180dee04ef6/start.sh#L12) into the Docker container.
 
 ## Setup
 
