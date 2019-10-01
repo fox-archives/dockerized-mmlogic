@@ -1,5 +1,4 @@
 #!/bin/sh
-
 set -e
 
 # build a Docker image as per the configuration files
@@ -13,6 +12,5 @@ sudo docker run --rm \
                 --mount type=bind,src=/tmp/.X11-unix,dst=/tmp/.X11-unix,ro=false \
                 --mount type=bind,src=/etc/localtime,dst=/etc/localtime,ro=true \
                 --name mmlogic-container \
-                -e DISPLAY="$DISPLAY" \
-                -it \
+                -de DISPLAY="$DISPLAY" \
                 mmlogic_ek:default
