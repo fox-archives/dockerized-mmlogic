@@ -21,5 +21,5 @@ ENV HOME /home/developer
 WORKDIR /home/developer
 
 # use wine
-# CMD ["wine", "mmlogic14.exe"]
-CMD ["wine", ".wine/drive_c/Program Files/Softronics/Mulimedia Logic/Mmlogic.exe"]
+CMD ["wine", "mmlogic14.exe"]
+# CMD ["wine", ".wine/drive_c/Program Files/Softronics/Mulimedia Logic/Mmlogic.exe"]
