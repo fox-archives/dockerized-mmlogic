@@ -21,7 +21,7 @@ cd dockerized-mmlogic
 mkdir .wine
 chmod +x ./start.sh
 sudo ./start.sh
-# on subsequent starts, update `Dockerfwile` CMD to use new executable
+# on subsequent starts, update `Dockerfile` CMD to use new executable
 ```
 
 Running `start.sh` as sudo is required because connecting to the Docker daemon socket requires superuser privileges.
